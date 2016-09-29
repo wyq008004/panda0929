@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>像素熊猫</title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ocean_style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/wyq.css"/>
+    <!--[if lt IE 9]>
+		<script language="javascript" type="text/javascript">
+		self.location='brower.html';
+		</script>
+		<![endif]-->
+	</head>
+	<body>	
+  <!--[if IE 9]>
+<div id="ie9tips">您的浏览器版本过低，请升级到ie10以上或更换Chrome浏览器获得流畅的浏览效果！</div>
+<![endif]-->
+		<div id="loading"></div>
+		<!-- 弹窗 -->
+		<div id="iframe-warp" class=" dis-none">			
+			<div id="iframe-close">
+				<div class="close-icon"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="mb-back"> < </div>	
+			<div class="iframe-body" style="color:#fff">
+			    <!-- design -->
+			    <div class="swiper-container-design" style="display:none">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide"><img src="upload/anli.jpg" alt=""></div>
+			            <div class="swiper-slide">作品2</div>
+			            <div class="swiper-slide">作品3</div>
+			            <div class="swiper-slide">作品4</div>
+			            <div class="swiper-slide">作品5</div>
+			        </div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+			    <!-- panda -->
+			    <div class="swiper-container-panda" style="display:none">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+							<div class="title">About 了解像素熊猫</div>
+							<p>像素熊猫设计</p>
+							<div class="text">像素熊猫设计品牌成立于2013年，3年间，我们服务超过200组以上客户并提供了创新易用的设计方案与视觉呈现，有效提升了用户体验与客户品牌价值。我们关注视觉与商业价值体现关系，运用视觉创造有价值的商业体现。我们善于品牌塑造，也理解传统平面与数字视觉之间的关联, 我们更深知视觉价值的体现本应顺应于市场与用户。</div>
+							<div class="btn-group">
+								<div class="button1">WEB</div>
+								<div class="button2">UI</div>
+								<div class="button3">VI</div>
+							</div>
+							
+			            </div>
+			            <div class="swiper-slide">
+							<div class="title">About 了解像素熊猫</div>
+							<p>WEB</p>
+							<div class="text">我们拥有西南乃至全国领先的设计团队，并在互联网端为您提供领先行业的呈现方式与创意构成。 我们采用业界领先的HTML5&CSS3技术，为您呈现出富有视觉动感与商业价值并存的桌面端，移动端网站。辅以ajax和Jquery技术，实现速度与视觉并重的企业官方PC，移动端网站 </div>
+			            </div>
+			            <div class="swiper-slide">
+							<div class="title">About 了解像素熊猫</div>
+							<p>UI</p>
+							<div class="text">我们只启用具有丰富UI设计经验的设计师，为您量身定制专属您的UI界面，ICON，甚至用户体验方式。我们采用手绘稿结合数码呈现的方式,从最初的原型设计到最最终的数码成品，每一步无不悉心备至。这一切，只为达到一个目的-为您和您的客户，提供更易用更爽心悦目的UI界面。 </div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="title">About 了解像素熊猫</div>
+							<p>VI</p>
+							<div class="text">从手绘标识原稿，到整体形象效果图，到最终完成，我们力求提供更好的设计和服务。您企业整体品牌形象的提升，是我们唯一努力的目标 </div>
+						</div>
+			        </div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+			    <!-- hetao -->
+			    <div class="swiper-container-hetao" style="display:none">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+							<div class="title">About 了解核桃科技</div>
+							<p>核桃科技有限公司</p>
+							<div class="text">核桃科技在中国•重庆创立，主要向连锁生态企业提供品牌管理与口碑营销的专业服务，致力于让品牌口碑变得更有价值。为了向合作品牌提供更专业的服务，核桃科技投资参与了新媒体、视觉设计等项目作为专业配套，其中包括专业范围包含有设计、新媒体营销、电子商务、移动互联等领域。</div>	
+							<h2>品牌整案服务</h2>
+							<div class="text">我们致力于帮助客户完成有别于其他品牌的战略定位及市场策略梳理，并通过团队高效执行力和市场资源、媒体渠道让计划落地实施，让品牌在受众用户群中建立高辨识度的唯一品牌印象，以此达到建立品牌影响力、促进市场销售的目标。</div>
+							<h2>口碑营销</h2>
+							<div class="text">在企业品牌建立过程中，我们通过持续的营销策划、落地活动体验、媒体传播让品牌在市场和用户中建立一个好的品牌口碑，并形成自然的口碑传播，以及在服务过程中不断帮助企业维护品牌口碑</div>
+							<h2>新媒体营销</h2>
+							<div class="text">目前我们成立了专职的新媒体营销项目组，成功孵化了@精选限量美食等优秀新媒体品牌，与新浪、网易、搜狐、腾讯、今日头条、一点资讯、爱奇艺、优酷土豆等主流媒体平台均建立了友好深度地合作关系，致力于帮助企业品牌最快建立好传播通道。</div>			
+							<div class="bottom"></div>
+			            </div>
+			            <div class="swiper-slide">
+							<div class="title">About 了解核桃科技</div>
+							<p>核桃科技有限公司</p>
+							<div class="text">核桃科技在中国•重庆创立，主要向连锁生态企业提供品牌管理与口碑营销的专业服务，致力于让品牌口碑变得更有价值。为了向合作品牌提供更专业的服务，核桃科技投资参与了新媒体、视觉设计等项目作为专业配套，其中包括专业范围包含有设计、新媒体营销、电子商务、移动互联等领域。</div>						
+							<div class="bottom"></div>
+			            </div>
+			            <div class="swiper-slide">
+							<div class="title">About 了解核桃科技</div>
+							<p>核桃科技有限公司</p>
+							<div class="text">核桃科技在中国•重庆创立，主要向连锁生态企业提供品牌管理与口碑营销的专业服务，致力于让品牌口碑变得更有价值。为了向合作品牌提供更专业的服务，核桃科技投资参与了新媒体、视觉设计等项目作为专业配套，其中包括专业范围包含有设计、新媒体营销、电子商务、移动互联等领域。</div>							
+							<div class="bottom"></div>
+			            </div>
+			            <div class="swiper-slide">
+							<div class="title">About 了解核桃科技</div>
+							<p>核桃科技有限公司</p>
+							<div class="text">核桃科技在中国•重庆创立，主要向连锁生态企业提供品牌管理与口碑营销的专业服务，致力于让品牌口碑变得更有价值。为了向合作品牌提供更专业的服务，核桃科技投资参与了新媒体、视觉设计等项目作为专业配套，其中包括专业范围包含有设计、新媒体营销、电子商务、移动互联等领域。</div>							
+							<div class="bottom"></div>
+			            </div>
+			        </div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+			</div>
+		</div>
+
+		<div id="menu-btn-wrap">
+			<img class="menu-txt" src="images/menu-txt.png" alt="" />
+			<div class="menu-icon">
+				<span class="menu-icon-top"></span>
+				<span class="menu-icon-center"></span>
+				<span class="menu-icon-bottom"></span>
+			</div>
+		</div>		
+		<div class="menu-link-wrap">
+			<ul id="menu-link">
+				<li data-menuanchor="page1" class="active">
+					<a href="#page1">
+						<i class="iconfont icon-01">01</i>
+						<span class="txt">像素熊猫首页</span>
+						<span class="line1 line_top"></span>
+						<span class="line1 line_right"></span>
+						<span class="line1 line_bottom"></span>
+						<span class="line1 line_left"></span>
+					</a>
+				</li>
+				<li data-menuanchor="page2">
+					<a href="#page2">
+						<i class="iconfont icon-02">02</i>
+						<span class="txt">案例展示</span>
+						<span class="line1 line_top"></span>
+						<span class="line1 line_right"></span>
+						<span class="line1 line_bottom"></span>
+						<span class="line1 line_left"></span>
+					</a>
+				</li>
+				<li data-menuanchor="page3">
+					<a href="#page3">
+						<i class="iconfont icon-03">03</i>
+						<span class="txt">关于我们</span>
+						<span class="line1 line_top"></span>
+						<span class="line1 line_right"></span>
+						<span class="line1 line_bottom"></span>
+						<span class="line1 line_left"></span>
+					</a>
+				</li>
+				<li data-menuanchor="page4">
+					<a href="#page4">
+						<i class="iconfont icon-04">04</i>
+						<span class="txt">团队成员</span>
+						<span class="line1 line_top"></span>
+						<span class="line1 line_right"></span>
+						<span class="line1 line_bottom"></span>
+						<span class="line1 line_left"></span>
+					</a>
+				</li>
+				<li data-menuanchor="page5">
+					<a href="#page5">
+						<i class="iconfont icon-05">05</i>
+						<span class="txt">合作品牌</span>
+						<span class="line1 line_top"></span>
+						<span class="line1 line_right"></span>
+						<span class="line1 line_bottom"></span>
+						<span class="line1 line_left"></span>
+					</a>
+				</li>
+				<li data-menuanchor="page6">
+					<a href="#page6">
+						<i class="iconfont icon-06">06</i>
+						<span class="txt">联系我们</span>
+						<span class="line1 line_top"></span>
+						<span class="line1 line_right"></span>
+						<span class="line1 line_bottom"></span>
+						<span class="line1 line_left"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="lang">
+			<a href='javascript:;' class='lang-active'>CN</a><a href='javascript:;'>EN</a>		
+		</div>
+		<div id="logo-mobile">
+			<img src="images/mobile-logo.png"/>
+		</div>
+		<div class="menu-mobile-bg"></div>
+		
+	<div id="top-logo">
+		<img src="images/logo_name.png"/>
+	</div>
+	<div id="foot-left">
+		<div class="news-power">
+			<a href="javascript:;" class="showfloat">
+			<div class="news-arrow">				
+				<i class="iconfont icon-arrow"></i>
+			</div>
+			<div class="news-txt">
+				<span>NEWS 动态</span>
+			</div>
+			</a>
+		</div>
+	</div>
+		<div id="dowebok">
+			<div class="section section1">
+				<div class="boxwrap">
+				   <div class="left-top">
+				   	  <div class="top-protxt1">
+				   	  	<p class="tit-eng">DESIGN WORKS</p>
+				   	   	<p>设计作品</p>
+				   	  </div>
+				   	  <div class="home-page">
+				   	  	  <span class="pageon">01</span><b class="pagecut">/</b>04
+				   	  </div>
+				   	  <div class="top-protxt2">
+				   	  	<ul><li><p>WEB UI设计</p></li><li><p>WEB UI设计</p></li><li><p>WEB UI设计</p></li></ul>
+				   	  </div>
+				   </div>
+            		<div id="home-btn">				   	
+					   	  <a class="img-prev"></a>
+						  <a class="img-next"></a>
+				    </div>
+						<div id="homebanner">
+							<ul>
+								<li>
+									<div class="title1"></div>
+									<div class="text text1"></div>
+								</li>
+								<li>
+									<div class="title2"></div>
+									<div class="text text2"></div>
+								</li>
+								<li>
+									<div class="title3"></div>
+									<div class="text text3"></div>
+								</li>	
+							</ul>
+						</div>			
+				</div>    
+			</div>
+			<div class="section section2">
+				<div class="boxwrap">
+					<div class="left-top">				   	 
+				   	  <div class="title-big left-txt2">
+				   	  	<div class="title-img">		   	  	
+					   	  	<img src="images/design-works.png"/>
+					   	  	<b class="title-line"></b>
+				   	  	</div>
+				   	  	<h2>设计作品</h2>
+				   	  </div>				   	  
+				   </div>
+				   <div class="list-warp">		   					 
+					   <div id="anli">
+						  <div>	
+						  	<div class="up-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字</p></div></div></div></div>
+						  	<div class="down-box"><div class="box"><img src="upload/box-1.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  </div>
+						  <div>	
+						  	<div class="up-box"><div class="box"><img src="upload/box-1.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称</p></div></div></div></div>
+						  	<div class="down-box"><div class="box"><img src="upload/box-5.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十</p></div></div></div></div>
+						  </div>
+						  <div>	
+						  	<div class="up-box"><div class="box"><img src="upload/box-5.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  	<div class="down-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  </div>
+						  <div>	
+						  	<div class="up-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  	<div class="down-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  </div>
+						  <div>	
+						  	<div class="up-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  	<div class="down-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  </div>
+						  <div>	
+						  	<div class="up-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  	<div class="down-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  </div>
+						  <div>	
+						  	<div class="up-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  	<div class="down-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  </div>
+						  <div>	
+						  	<div class="up-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  	<div class="down-box"><div class="box"><img src="upload/box-3.jpg" alt=""><div class="up-float"><div class="text"><p class="title">web</p><p class="detail">案例名称有十七个字案例名称有十七个字案例名称有十七个字</p></div></div></div></div>
+						  </div>				  
+						</div>
+					  </div>				  
+				 </div>					
+			</div>
+			<div class="section section3">
+			        <div class='bgpic3' data-src='background-image: url(images/about-bg.jpg);'></div>
+					<div class="left-top">						
+				   	  <div class="title-big left-txt3">
+				   	  	<div class="title-img">	
+				   	  	<img src="images/about.png"/>
+				   	  	<b class="title-line"></b>
+				   	  	</div>
+				   	  	<h2>关于</h2>   	  
+				   	  </div>				   	  
+				   </div>
+           		<div class='slide'>
+           		<div class='about-center' id="panda">
+	           		<a href='javascript:;' class='showfloat'>
+		           		<div class='about-title'>
+		           			<img src='images/design.png'/>
+		           		</div>
+		           		<div class='about-txt'>
+			           		<h3>像素熊猫</h3>
+			           		<h4></h4>
+			           		<b class='white-bord'></b>
+			           		<div class='about-detail'>像素熊猫设计品牌成立于2013年，3年间，我们服务超过200组以上客户并提供了创新易用的设计方案与视觉呈现，有效提升了用户体验与客户品牌价值。
+			           		</div>
+		           		</div>
+	           		</a>
+           		</div>
+           		</div>
+           		<div class='slide'>
+           		<div class='about-center' id="hetao">
+	           		<a href='javascript:;' class='showfloat'>
+		           		<div class='about-title'>
+		           			<img src='images/market.png'/>
+		           		</div>
+		           		<div class='about-txt'>
+			           		<h3>核桃科技有限公司</h3>
+			           		<h4></h4>
+			           		<b class='white-bord'></b>
+			           		<div class='about-detail'>核桃科技在中国•重庆创立，主要向连锁生态企业提供品牌管理与口碑营销的专业服务，致力于让品牌口碑变得更有价值。
+			           		</div>
+		           		</div>
+	           		</a>
+           		</div>
+           		</div>		   
+			</div>
+			<div class="section section4">
+				<div class="boxwrap">
+					<div class="left-top">				   	 
+				   	  <div class="title-big left-txt2">
+				   	  	<div class="title-img">		   	  	
+					   	  	<img src="images/team.png"/>
+					   	  	<b class="title-line"></b>
+				   	  	</div>
+				   	  	<h2>团队</h2>
+				   	  </div>				   	  
+				   </div>
+				   <div class="list-warp">		   					 
+					   <div id="designer">
+						  <div>
+						  	<div class="icon-box">
+						  	 	<div class="head-group">
+									<img src="upload/icon-head.png">
+									<img src="upload/icon-head-up.png" class="designer-up">
+						  	 	</div>
+								<div class="detail">
+									<p class="name">王子</p>
+									<p class="job">职位：长度最好和圆差不多最好看</p>
+								</div>
+								<div class="button-group">
+										<a href="javascript:;" class="qq"></a>	
+										<a href="javascript:;" class="weixin"></a>
+								</div>
+						  	</div>
+						  </div>
+						  <div>
+						  	<div class="icon-box">
+						  	 	<div class="head-group">
+									<img src="upload/icon-head.png">
+									<img src="upload/icon-head-up.png" class="designer-up">
+						  	 	</div>
+								<div class="detail">
+									<p class="name">王子</p>
+									<p class="job">职位：djsafkldj</p>
+								</div>
+								<div class="button-group">
+										<a href="javascript:;" class="qq"></a>	
+										<a href="javascript:;" class="weixin"></a>
+								</div>
+						  	</div>
+						  </div>
+						  <div>
+						  	<div class="icon-box">
+						  	 	<div class="head-group">
+									<img src="upload/icon-head.png">
+									<img src="upload/icon-head-up.png" class="designer-up">
+						  	 	</div>
+								<div class="detail">
+									<p class="name">王子</p>
+									<p class="job">职位：设计师</p>
+								</div>
+								<div class="button-group">
+										<a href="javascript:;" class="qq"></a>	
+										<a href="javascript:;" class="weixin"></a>
+								</div>
+						  	</div>
+						  </div>
+						  <div>
+						  	<div class="icon-box">
+						  	 	<div class="head-group">
+									<img src="upload/icon-head.png">
+									<img src="upload/icon-head-up.png" class="designer-up">
+						  	 	</div>
+								<div class="detail">
+									<p class="name">王子王子王子王子</p>
+									<p class="job">职位：高级设计师</p>
+								</div>
+								<div class="button-group">
+										<a href="javascript:;" class="qq"></a>	
+										<a href="javascript:;" class="weixin"></a>
+								</div>
+						  	</div>
+						  </div>
+						  <div>
+						  	<div class="icon-box">
+						  	 	<div class="head-group">
+									<img src="upload/icon-head.png">
+									<img src="upload/icon-head-up.png" class="designer-up">
+						  	 	</div>
+								<div class="detail">
+									<p class="name">王子</p>
+									<p class="job">职位：高级设计师</p>
+								</div>
+								<div class="button-group">
+										<a href="javascript:;" class="qq"></a>	
+										<a href="javascript:;" class="weixin"></a>
+								</div>
+						  	</div>
+						  </div>
+						  <div>
+						  	<div class="icon-box">
+						  	 	<div class="head-group">
+									<img src="upload/icon-head.png">
+									<img src="upload/icon-head-up.png" class="designer-up">
+						  	 	</div>
+								<div class="detail">
+									<p class="name">王子</p>
+									<p class="job">职位：高级设计师</p>
+								</div>
+								<div class="button-group">
+										<a href="javascript:;" class="qq"></a>	
+										<a href="javascript:;" class="weixin"></a>
+								</div>
+						  	</div>
+						  </div>
+						  <div>
+						  	<div class="icon-box">
+						  	 	<div class="head-group">
+									<img src="upload/icon-head.png">
+									<img src="upload/icon-head-up.png" class="designer-up">
+						  	 	</div>
+								<div class="detail">
+									<p class="name">王子</p>
+									<p class="job">职位：高级设计师</p>
+								</div>
+								<div class="button-group">
+										<a href="javascript:;" class="qq"></a>	
+										<a href="javascript:;" class="weixin"></a>
+								</div>
+						  	</div>
+						  </div>
+						  <div>
+						  	<div class="icon-box">
+						  	 	<div class="head-group">
+									<img src="upload/icon-head.png">
+									<img src="upload/icon-head-up.png" class="designer-up">
+						  	 	</div>
+								<div class="detail">
+									<p class="name">王子</p>
+									<p class="job">职位：高级设计师</p>
+								</div>
+								<div class="button-group">
+										<a href="javascript:;" class="qq"></a>	
+										<a href="javascript:;" class="weixin"></a>
+								</div>
+						  	</div>
+						  </div>				  
+						</div>
+					  </div>				  
+				 </div>					
+			</div>
+			<div class="section section5">
+				<div class="boxwrap">
+					<div class="left-top">				   	 
+				   	  <div class="title-big left-txt2">
+				   	  	<div class="title-img">		   	  	
+					   	  	<img src="images/cooper.png"/>
+					   	  	<b class="title-line"></b>
+				   	  	</div>
+				   	  	<h2>合作品牌</h2>
+				   	  </div>				   	  
+				   </div>
+				   <div class="list-warp">		   					 
+					   <div id="starhover" class="star-list">
+						  <div>
+						  	<a href='javascript:;' class='showfloat' data-child='2'>
+							  	<img src='upload/p11.png' class="star-name" />	
+						  		<img src='upload/p1.png'/>
+						  	</a>
+						  </div>
+						  <div>
+							  <a href='javascript:;' class='showfloat' data-child='2'>
+								  <img src='upload/p22.png' class="star-name" />	
+								  <img src='upload/p2.png'/>
+							  </a>
+						  </div>
+						  <div>
+							  <a href='javascript:;' class='showfloat' data-child='2'>
+								  <img src='upload/p33.png' class="star-name" />	
+								  <img src='upload/p3.png'/>
+							  </a>
+						  </div>
+						  <div>
+							  <a href='javascript:;' class='showfloat' data-child='2'>
+								  <img src='upload/p44.png' class="star-name" />	
+							  	<img src='upload/p4.png'/>
+							  </a>
+						  </div>
+						  <div>
+							  <a href='javascript:;' class='showfloat' data-child='2'>
+								  <img src='upload/p55.png' class="star-name" />	
+								  <img src='upload/p5.png'/>
+							  </a>
+						  </div>
+						  <div>
+							  <a href='javascript:;' class='showfloat' data-child='2'>
+								  <img src='upload/p66.png' class="star-name" />	
+								  <img src='upload/p6.png'/>
+							  </a>
+						  </div>
+						  <div>
+							  <a href='javascript:;' class='showfloat' data-child='2'>
+								  <img src='upload/p77.png' class="star-name" />	
+							  	<img src='upload/p7.png'/>
+							  </a>
+						  </div>
+						  <div>
+							  <a href='javascript:;' class='showfloat' data-child='2'>
+								  <img src='upload/p88.png' class="star-name" />	
+							  	<img src='upload/p8.png'/>
+							  </a>
+						  </div>				  
+						</div>
+					  </div>				  
+				 </div>					
+			</div>
+			<div class="section section6">
+				<div class="boxwrap">
+					<div class="left-top">				   	 
+				   	  <div class="title-big left-txt7">
+				   	  	<div class="title-img">	
+					   	  	<img src="images/titeng_contact.png"/>
+					   	  	<b class="title-line"></b>
+				   	  	</div>
+				   	  	<h2>联系我们</h2>
+				   	  </div>				   	  
+				   </div>
+				   <div class="contact-box">
+				   	  <h4><img src="images/eng_phone.png"/></h4>
+				   	  <p class="ph-number">电话：023-66668888</p>
+				   	  <p class="tel-number">手机：18875233627</p>
+				   	  <p class="qq-number">	QQ：1009859167</p>
+				   	  <div class="contact-map">
+				   	  <img src="upload/ybMr56641.jpg"/>
+				   	  </div>
+				   	  <p>中国&nbsp;&nbsp;重庆&nbsp;&nbsp;渝中区&nbsp;&nbsp;龙湖时代天街4号楼20楼</p>
+				   	 	<div class="btn-work">
+				   	 		<a href="job_list.php?sys=1" class="showfloat">工作机会</a>
+				   	 		<div class="btn-b"></div>
+				   	 	</div>
+				  			   	 
+				   	  <div class="two-code">
+				   	  	<img src="upload/erwei.jpg"/>
+				   	  </div>
+				   </div>
+				</div>
+				
+			</div>				
+		</div>
+	</body>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/plugin.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/wyq.js"></script>
+	
+</html>
